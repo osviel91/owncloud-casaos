@@ -16,7 +16,7 @@ version: "3.3"
 services: 
 
   owncloud:
-    image: owncloud/server:latest
+    image: arm32v7/owncloud
     container_name: owncloud-server
     restart: unless-stopped
     ports:
@@ -43,7 +43,7 @@ version: "3.3"
 services: 
 
   mariadb-own:
-    image: mariadb:latest
+    image: yobasystems/alpine-mariadb
     container_name: owncloud-mariadb
     restart: unless-stopped
     environment:
